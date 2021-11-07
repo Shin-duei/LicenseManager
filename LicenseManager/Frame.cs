@@ -85,7 +85,7 @@ namespace LicenseManager
 
                 //複製私鑰放到和License一起
                 var CopyPrivateKey = Path.Combine(Path.GetDirectoryName(dialog.FileName), RSAKit.privateKeyFileName);
-                File.Copy(this.textBoxEncryptKeyPath.Text, CopyPrivateKey, true);
+                File.Copy(this.textBoxDecryptKeyPath.Text, CopyPrivateKey, true);
             }     
             MessageBox.Show("儲存完畢","提示");
         }

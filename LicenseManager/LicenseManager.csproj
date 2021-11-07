@@ -35,6 +35,9 @@
   <PropertyGroup>
     <ApplicationIcon>Logo_license_key.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>LicenseManager.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />

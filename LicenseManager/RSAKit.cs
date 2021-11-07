@@ -177,8 +177,9 @@ namespace LicenseManager
                         return Encoding.UTF8.GetString(outputStream.ToArray());
                     }
                 }
-                catch
+                catch(Exception ex)
                 {
+                    var d=ex.ToString();
                     return encryptedText;//無法解密就直接傳回原本文檔
                 }
                
